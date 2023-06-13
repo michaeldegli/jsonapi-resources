@@ -435,7 +435,7 @@ module JSONAPI
 
     class << self
       def inherited(subclass)
-        super
+        # super
         subclass.abstract(false)
         subclass.immutable(false)
         subclass.caching(false)
